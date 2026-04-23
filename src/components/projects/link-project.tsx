@@ -2,12 +2,7 @@
 import { cn } from "@/lib/utils";
 import { linkProject } from "@/Ts/types";
 import { IconExternalLink } from "@tabler/icons-react";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-  useSpring,
-} from "motion/react";
+import { motion, useMotionValue } from "motion/react";
 import { useState } from "react";
 
 export const LinkProject = ({

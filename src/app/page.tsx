@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Bio } from "../components/About me/bio";
 import { Logo } from "../components/About me/logo";
 import { Links } from "../components/About me/links";

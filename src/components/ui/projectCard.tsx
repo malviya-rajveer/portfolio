@@ -10,7 +10,6 @@ export const Card = ({
   heading,
   link,
   detail,
-  className,
   img,
   img2,
   img3,
