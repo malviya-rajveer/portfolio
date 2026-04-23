@@ -6,10 +6,10 @@ import { useEffect } from "react";
 
 const Myself = "Hi, I'm Rajveer.";
 
-const whatIthinkline1 = ` I think what makes a product go millione dollars in revenue,`;
+const whatIthinkline1 = ` I think what makes a product go million dollars in revenue,`;
 const whatIthinkline2 =
-  "in the world full of competition with same feauters even less pricing. Is that";
-const whatIthinkline3 = "how the product feels to use.";
+  "In a world full of competitors providing same features even less pricing,";
+const whatIthinkline3 = "Is that how the product feels to use.";
 
 const MyselfwithNbsp = Myself.replace(/ /g, "\u00A0");
 const whatIthinkline1withNbsp = whatIthinkline1.replace(/ /g, "\u00A0");
@@ -161,8 +161,8 @@ export const Bio = () => {
         )}
       >
         <span className="text-secondary">Hi, I'm Rajveer.</span> I think what
-        makes a product go millione dollars in revenue,in the world full of
-        competition with same feauters even less pricing. Is that how the
+        makes a product go million dollars in revenue,In a world full of
+        competitors providing same features even less pricing,Is that how the
         product feels to use.
       </motion.div>
     </div>
