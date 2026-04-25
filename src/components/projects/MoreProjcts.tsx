@@ -39,6 +39,15 @@ export const MoreProjects = () => {
         }}
         className="mt-2"
       >
+        {" "}
+        <LinkProject
+          href="https://quilio-login-page.vercel.app/"
+          heading="Quilio Login"
+          className="brightness-105"
+          src="/quilioLogin.png
+          "
+          posterImage="/posterImages/osloAI.png"
+        />
         <LinkProject
           href="https://oslo-ai.vercel.app/"
           heading="Oslo AI"

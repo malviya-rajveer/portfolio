@@ -68,7 +68,7 @@ export const LinkProject = ({
           animate={{ opacity: [0, 1], scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ type: "spring", stiffness: 400, damping: 18 }}
-          className="shadow-pop pointer-events-none absolute z-100 flex h-28 w-28 -translate-x-10 -translate-y-0 items-center justify-center rounded-lg bg-white object-cover p-[2px]"
+          className="shadow-pop pointer-events-none absolute z-100 flex h-28 w-28 -translate-x-13 -translate-y-21 items-center justify-center rounded-lg bg-white object-cover p-[2px]"
         >
           <motion.img
             src={src}
