@@ -44,6 +44,7 @@ export const MoreProjects = () => {
           heading="Oslo AI"
           className="brightness-105"
           src="/videos/6.mp4"
+          posterImage="/posterImages/osloAI.png"
           video
         />{" "}
         <LinkProject
@@ -51,12 +52,14 @@ export const MoreProjects = () => {
           heading="Shia Devs"
           className="brightness-200"
           src="/videos/2.mp4"
+          posterImage="/posterImages/shiaDevs.png"
           video
         />
         <LinkProject
           href="https://ruby-arc-button.vercel.app/"
           heading="Ruby Arc"
           className="brightness-150"
+          posterImage="/posterImages/rubyArc.png"
           src="/videos/1.mp4"
           video
         />
@@ -65,6 +68,7 @@ export const MoreProjects = () => {
           heading="Shimmer"
           className="brightness-110"
           src="/videos/4.mp4"
+          posterImage="/posterImages/shimmer.png"
           video
         />
       </motion.div>

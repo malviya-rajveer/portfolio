@@ -11,6 +11,7 @@ export const LinkProject = ({
   className,
   video = false,
   href,
+  posterImage,
 }: linkProject) => {
   const [hover, setHover] = useState(false);
 
@@ -100,6 +101,8 @@ export const LinkProject = ({
             muted
             playsInline
             loop
+            preload="auto"
+            poster={posterImage}
             className={cn(
               "pointer-events-none absolute z-100 h-27 w-27 rounded-lg object-cover",
               className,

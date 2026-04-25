@@ -17,4 +17,5 @@ export interface linkProject {
   src: string;
   href:string;
   video?:boolean
+  posterImage?:string
 }
