@@ -29,12 +29,13 @@ export const Projects = () => {
         img="/huly/image-11.png"
       />
       <Card
-        link="https://kera-five.vercel.app/"
-        heading="Kera"
-        detail="AI integrated Processor"
-        img3="/kera/image-11.png"
-        img2="/kera/image-22.png"
-        img="/kera/image-33.png"
+        link="https://quilio-login-page.vercel.app/"
+        heading="Quilio Login"
+        className="brightness-105"
+        detail="Cripto Wallet"
+        img3="/quilio/image1.png"
+        img2="/quilio/image2.png"
+        img="/quilio/image.png"
       />{" "}
       <Card
         link="https://dimora.vercel.app/"

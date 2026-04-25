@@ -41,11 +41,10 @@ export const MoreProjects = () => {
       >
         {" "}
         <LinkProject
-          href="https://quilio-login-page.vercel.app/"
-          heading="Quilio Login"
+          href=""
+          heading="Kera"
           className="brightness-105"
-          src="/quilioLogin.png
-          "
+          src="/kera/image-11.png"
           posterImage="/posterImages/osloAI.png"
         />
         <LinkProject
