@@ -41,7 +41,7 @@ export const MoreProjects = () => {
       >
         {" "}
         <LinkProject
-          href=""
+          href="https://kera-five.vercel.app/"
           heading="Kera"
           className="brightness-105"
           src="/kera/image-11.png"
