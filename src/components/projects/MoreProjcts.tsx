@@ -56,6 +56,13 @@ export const MoreProjects = () => {
           video
         />{" "}
         <LinkProject
+          href="https://navigation-links.vercel.app/"
+          heading="Navigation Links"
+          className="object-left brightness-200"
+          src="/videos/navlink.mp4"
+          video
+        />
+        <LinkProject
           href="https://pro-website-nine.vercel.app/"
           heading="Shia Devs"
           className="brightness-200"
