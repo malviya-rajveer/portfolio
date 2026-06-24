@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "Rajveer UI components",
+  "homepage": "https://www.rajveeer.xyz/",
+  "items": [
+    {
+      "name": "text-surf component",
+      "type": "registry:block",
+      "title": "text-surf component",
+      "description": "A component which reveals anything provided on scroll.",
+      "dependencies": ["motion","tailwind-merge","clsx"],
+      "files": [
+        {
+          "path": "src/registry/ui/text-surf.tsx",
+          "type": "registry:ui"
+        },{
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
