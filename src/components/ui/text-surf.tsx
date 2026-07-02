@@ -2,7 +2,6 @@
 
 import React, { RefObject, useMemo, useRef, useState } from "react";
 import {
-  AnimatePresence,
   motion,
   MotionValue,
   useMotionValueEvent,
