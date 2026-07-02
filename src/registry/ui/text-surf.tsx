@@ -207,7 +207,7 @@ export function TextSurf({
   className: string;
   scrollContainer?: RefObject<HTMLElement | null>;
   varient?: varient;
-  duration: number;
+  duration?: number;
   theme?: theme;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -228,7 +228,7 @@ export function TextSurf({
   return (
     <section
       ref={containerRef}
-      className={cn("relative min-h-[220vh]", className)}
+      className={cn("relative min-h-[220vh] text-lg", className)}
     >
       <div className="sticky top-10 flex items-center justify-center">
         {/* {mount && ( */}
