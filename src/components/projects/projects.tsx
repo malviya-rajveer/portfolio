@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Card } from "../ui/projectCard";
+import { Card } from "../ui/card";
 export const Projects = () => {
   return (
     <motion.div

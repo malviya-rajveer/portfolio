@@ -17,15 +17,15 @@ export const Logo = () => {
         duration: 0.2,
         ease: "easeOut",
       }}
-      className="shadow-primary flex size-12 shrink-0 -translate-y-1 scale-75 items-center justify-center rounded-[12px] md:translate-x-1"
+      className="flex size-12 shrink-0 -translate-y-1 scale-75 items-center justify-center md:translate-x-1"
     >
-      <div className="size-10 overflow-hidden rounded-lg">
+      <div className="size-12 rounded-lg">
         <Image
-          src="/profile/chinnar.png"
+          src="/profile.svg"
           alt="Profile Picture"
           width={100}
           height={105}
-          className="-translate-y-1"
+          className="-translate-y-0.5"
         />
       </div>
     </motion.div>

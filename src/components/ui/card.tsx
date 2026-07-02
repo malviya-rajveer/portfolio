@@ -3,7 +3,7 @@ import { IconExternalLink } from "@tabler/icons-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { useState } from "react";
-import { Image_showcase } from "../ui/Image";
+import { Image_showcase } from "./Image";
 import Link from "next/link";
 import { ProjectCard } from "@/Ts/types";
 export const Card = ({
@@ -26,21 +26,8 @@ export const Card = ({
         href={link}
         className="absolute inset-0 z-10 cursor-pointer"
       ></Link>
-      <div className="relative translate-x-1 mask-b-from-0% p-2.5">
-        <Image
-          src={"/chinnar-removebg.png"}
-          height={20}
-          width={20}
-          className="absolute -top-[2px] -left-[1px] scale-60 rotate-160 mask-t-from-50% opacity-85"
-          alt=""
-        ></Image>
-        <Image
-          src={"/chinnar-removebg.png"}
-          height={20}
-          width={20}
-          className="-rotate-95 opacity-85"
-          alt="tree"
-        ></Image>
+      <div className="w-full py-4">
+        <div className="relative mx-2 h-2 w-4 rounded-full bg-radial to-neutral-600"></div>
       </div>
       <div className="-mt-2 pl-2.5">
         <div className="text-primary flex items-center gap-1 text-[16px]">

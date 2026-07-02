@@ -25,7 +25,6 @@ type Unit =
     };
 
 type theme = "dark" | "light";
-
 const Pallate = {
   sunshine: [
     "#000000",
@@ -77,6 +76,7 @@ const Pallate = {
     "#000000",
   ],
 };
+
 type varient = keyof typeof Pallate;
 
 function collectUnits(node: React.ReactNode, units: Unit[] = []): Unit[] {
@@ -138,19 +138,19 @@ function RevealUnit({
   index,
   total,
   unit,
-  duration,
   progress,
   varient,
   theme,
+  duration,
 }: {
   children: React.ReactNode;
   index: number;
-  duration: number;
   total: number;
   unit: Unit;
   progress: MotionValue<number>;
   varient: varient;
   theme: theme;
+  duration: number;
 }) {
   const start = (index + 1) / total;
   const [active, setActive] = useState(false);
@@ -207,7 +207,7 @@ export function TextSurf({
   className: string;
   scrollContainer?: RefObject<HTMLElement | null>;
   varient?: varient;
-  duration: number;
+  duration?: number;
   theme?: theme;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -230,35 +230,33 @@ export function TextSurf({
       ref={containerRef}
       className={cn("relative min-h-[220vh]", className)}
     >
-      <div className="sticky top-10 flex items-center justify-center">
+      <div className="sticky top-5 flex items-center justify-center">
         {/* {mount && ( */}
         <div className="items-center gap-[1px] leading-tight font-bold">
-          <AnimatePresence>
-            {units.map((unit, index) => {
-              if (unit.type === "br") {
-                return <br key={index} />;
-              }
-              return (
-                <span key={index}>
-                  <RevealUnit
-                    theme={theme}
-                    index={index}
-                    duration={duration}
-                    unit={unit}
-                    total={units.length}
-                    progress={smoothProgress}
-                    varient={varient}
-                  >
-                    {unit.type === "char"
-                      ? unit.value === " "
-                        ? "\u00A0"
-                        : unit.value
-                      : unit.value}
-                  </RevealUnit>
-                </span>
-              );
-            })}
-          </AnimatePresence>
+          {units.map((unit, index) => {
+            if (unit.type === "br") {
+              return <br key={index} />;
+            }
+            return (
+              <span key={index}>
+                <RevealUnit
+                  theme={theme}
+                  index={index}
+                  unit={unit}
+                  duration={duration}
+                  total={units.length}
+                  progress={smoothProgress}
+                  varient={varient}
+                >
+                  {unit.type === "char"
+                    ? unit.value === " "
+                      ? "\u00A0"
+                      : unit.value
+                    : unit.value}
+                </RevealUnit>
+              </span>
+            );
+          })}
         </div>
         {/* )} */}
       </div>

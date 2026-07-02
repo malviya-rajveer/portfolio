@@ -6,6 +6,13 @@
   --foreground: #171717;
 }
 
+@font-face {
+  font-family: 'Rebond';
+  src: url('/font/brandfont.woff2') format('woff2');
+  font-display: block;
+}
+
+
 @theme {
   --color-primary: #656565;
   --color-secondary: var(--color-black);
@@ -15,6 +22,7 @@
   --shadow-primary:  0px 0px 8px rgba(0, 0, 0, 0.05),  0px 0px 2px rgba(11, 75, 249, 0.09), inset 0px 0px 2px rgba(38, 95, 253, 0.208), inset 0px 0px 4px rgba(11, 75, 249, 0.1);
   --shadow-boxes: rgba(47, 41, 34, 0.08) 0px 3px 3px, rgba(47, 41, 34, 0.08) 0px 11px 8px, rgba(47, 41, 34, 0.03) 0px 4px 4px, rgba(47, 41, 34, 0.03) 0px 1px 1px -0.5px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px;
   --shadow-pop:rgba(0, 0, 0, 0.07) 0px 6px 24px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1px 0px;
+  --shadow-subtel: 0 1px 2px rgba(0, 0, 0, .05);
 }
 
 @theme inline {
@@ -23,6 +31,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
+  --font-myfont: 'Rebond';
 }
 
 @media (prefers-color-scheme: dark) {
