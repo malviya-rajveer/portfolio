@@ -103,7 +103,7 @@ export const myTheme = {
 };
 
 const BasicUsage = `"use client";
-import { TextSurf } from "@/components/text-surf";
+import { TextSurf } from "@/components/ui/text-surf";
 import Image from "next/image";
 
 export default function Home() {
@@ -126,7 +126,7 @@ export default function Home() {
     `;
 
 const CustomeUsage = `"use client";
-import { TextSurf } from "@/components/text-surf";
+import { TextSurf } from "@/components/ui/text-surf";
 import Image from "next/image";
 import { useRef } from "react";
 
