@@ -85,14 +85,6 @@ export const MoreProjects = () => {
           src="/videos/1.mp4"
           video
         />
-        <LinkProject
-          href="https://shimmer-psi.vercel.app/"
-          heading="Shimmer"
-          className="brightness-110"
-          src="/videos/4.mp4"
-          posterImage="/posterImages/shimmer.png"
-          video
-        />{" "}
       </motion.div>
     </div>
   );
