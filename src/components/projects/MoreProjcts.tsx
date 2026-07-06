@@ -41,6 +41,13 @@ export const MoreProjects = () => {
       >
         {" "}
         <LinkProject
+          href="https://www.rajveeer.xyz/components/text-surf"
+          heading="Text-surf"
+          className="brightness-110"
+          src="/posterImages/textSurf.png"
+          posterImage=""
+        />
+        <LinkProject
           href="https://kera-five.vercel.app/"
           heading="Kera"
           className="brightness-105"
@@ -85,7 +92,7 @@ export const MoreProjects = () => {
           src="/videos/4.mp4"
           posterImage="/posterImages/shimmer.png"
           video
-        />
+        />{" "}
       </motion.div>
     </div>
   );
